@@ -1,27 +1,24 @@
-
-main.py ===》项目入口
-
-conf
-    config.py ===》配置文件
-    urls.py ===》路由配置
-
-core
-    handlers.py ===》handlers实现
-
-
+项目目录：
 .
 ├── conf
 │   ├── config.py
+│   ├── __init__.py
 │   └── urls.py
-├── core
-│   └── handlers.py
 ├── db
 │   └── __init__.py
-├── main.py
+├── handlers
+│   ├── handlers.py
+│   └── __init__.py
+├── libs
+│   └── __init__.py
+├── main.py ===》项目入口
 ├── README
-├── statics
+├── static
 └── templates
+
+
 
 
 1.启动项目：
     python main.py
+
