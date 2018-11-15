@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Index page
+{% end %}
+
+{% block content %}
+    This is index page <br> 当前时间: {{ datetime.datetime.now() }}
+<br>
+
+    {% for n in range(1,6) %}
+        <img src="{{ static_url('imges/{}.jpg'.format(n))}}" width="1080" height="720"/>
+    {% end %}
+
+{% end %}
